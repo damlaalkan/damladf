@@ -13,7 +13,6 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
 				"typeProperties": {
 					"url": "http://40.68.214.72:80/api/v1/service/tani-volume-prediction-real-time/score",
 					"method": "POST",
@@ -21,7 +20,21 @@
 						"Content-Type": "application/json",
 						"Authorization": "Bearer q76Au4r8Pj4sMIGm142xiaLeuEzEaGMM"
 					},
-					"body": "{\n    \"Inputs\": {\n          \"WebServiceInput0\":\n          [\n              {\n                    'URUN_ID': \"8\",\n                    'IL': \"25\",\n                    'CIRO': \"20\",\n                    'ALV_TARIH': \"2019-04-10T00:00:00Z\",\n                    'YAS': \"70\",\n                    'MUSTERI_ID': \"142430428\",\n                    'TRX_ID': \"50000\",\n              },\n          ],\n    },\n    \"GlobalParameters\":  {\n    }\n}"
+					"body": {
+						"Inputs": {
+							"WebServiceInput0": [
+								{
+									"URUN_ID": 8,
+									"IL": 25,
+									"CIRO": "20",
+									"ALV_TARIH": "2019-04-10T00:00:00Z",
+									"YAS": 70,
+									"MUSTERI_ID": 142430428,
+									"TRX_ID": 50000
+								}
+							]
+						}
+					}
 				}
 			}
 		],
